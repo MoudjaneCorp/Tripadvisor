@@ -49,6 +49,18 @@ img {
     width:100%;
 }
 
+.hover:hover{
+  cursor: pointer;
+}
+
+
+
+.navbar_top:hover{
+  background-color: lightgrey;
+  border-radius:24px;
+  border-width: 48px;
+}
+
 /* ******************************** */
 /* logo */
 /* ******************************** */
@@ -107,6 +119,10 @@ header a {
     padding: 12px 16px;  /* padding : 12px 16px 12px 16px */
 }
 
+#sign-in:hover{
+  background-color: rgba(0,0,0,.8);
+}
+
 header > section > nav > div, button {
     margin-left:15px;
 }
@@ -140,6 +156,14 @@ header > section > nav > div, button {
     padding: 0.2px 16px;
     margin-right: 8px;
     margin-bottom: 10px;
+}
+
+.carousel_button:hover{
+  transition-duration:.4s ;
+  background-color: black;
+  fill:white;
+  color:white;
+
 }
 
 /* ******************************** */
@@ -179,8 +203,8 @@ header > section > nav > div, button {
 
 #all-images-button {
     position:absolute;
-    bottom: 35px;
-    left: 150px;
+    bottom: -110px;
+    left: 140px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -194,6 +218,10 @@ header > section > nav > div, button {
 
 #all-images-button p {
     margin-left:3px;
+}
+
+.img_hover:hover{
+  opacity:0.8;
 }
 
 /* ******************************** */
@@ -273,6 +301,7 @@ header > section > nav > div, button {
 
 .travel-advice > div:hover {
     background-color: rgba(211, 211, 211, 0.3);
+    transition-duration: .4s;
 }
 
 .travel-advice > div > p {
