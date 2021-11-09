@@ -221,7 +221,8 @@ header > section > nav > div, button {
 }
 
 .img_hover:hover{
-  opacity:0.8;
+  transition-duration: .3s;
+  opacity:0.85;
 }
 
 /* ******************************** */
