@@ -1,0 +1,497 @@
+/* this is a comment */
+
+/* ******************************** */
+/* html: elements */
+/* ******************************** */
+
+* {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Trip Sans Med"; 
+}
+
+aside {
+    background-color:#faf1ed;
+    padding: 20px 0px;
+}
+
+section {
+    width:82%;
+    margin: 10px auto;
+}
+
+h1 {
+    font-size:54px;
+    font-weight:bold;
+}
+
+h2 {
+    font-size:28px;
+}
+
+h4 {
+    font-size:24px;
+    font-family: "Trip Sans Reg"; 
+}
+
+h5 {
+    font-size:18px;
+    font-family: "Trip Sans Reg"; 
+}
+
+h5:hover {
+    text-decoration: underline;
+}
+
+img {
+    width:100%;
+}
+
+/* ******************************** */
+/* logo */
+/* ******************************** */
+
+#tripadvisor {
+    width: 190px;
+}
+
+#tripadvisor-logo {
+    width: 40px;
+}
+
+
+/* ******************************** */
+/* global space */
+/* ******************************** */
+
+.section-spacing {
+    margin-top:68px;
+}
+
+/* ******************************** */
+/* header */
+/* ******************************** */
+
+/* header => path to section */
+header > section {
+    display: flex;
+    justify-content: space-between; /* horizontal */
+    margin-top:0px;
+}
+
+/* header => path to section => path to nav */
+header > section > nav {
+    display: flex;
+}
+
+header nav div {
+    display: flex;
+    align-items: center; /* vertical */
+}
+
+header a {
+    color: #000;
+    font-weight:bold;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+#sign-in {
+    border:none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 12px 16px;  /* padding : 12px 16px 12px 16px */
+}
+
+header > section > nav > div, button {
+    margin-left:15px;
+}
+
+/* ******************************** */
+/* main: h1 explore */
+/* ******************************** */
+
+#explore {
+  color: rgb(158, 23, 158);
+}
+
+/* ******************************** */
+/* main: main-navigation */
+/* ******************************** */
+
+.main-navigation {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-navigation > div {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex:23%; /* minimal width */
+    border: 1px solid #000; /* border-width; 1px; border-style: solid; border-color: #000; */
+    border-radius: 10px;
+    box-sizing: border-box; /* same size */
+    padding: 0.2px 16px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
+
+/* ******************************** */
+/* main: images */
+/* ******************************** */
+
+/* selector :hover, :focus, :first-child, :last-child, :nth-child  */
+
+.images {
+    display:flex;
+    margin-top:12px;
+    height:430px;
+}
+
+.images div:first-child {
+    width:60%;
+    height:100%;
+    margin-right:2px;
+}
+
+.images div:first-child img {
+    height:100%;
+    object-fit:cover; /* crop the image to fill the box (no stretching nor change of the size) */
+    cursor:pointer;
+}
+
+.images div:last-child {
+    width:40%;
+    height:100%;
+}
+
+.images div:last-child img {
+    height:49.7%;
+    object-fit:cover; /* crop the image to fill the box (no stretching nor change of the size) */
+    cursor:pointer;
+}
+
+#all-images-button {
+    position:absolute;
+    bottom: 35px;
+    left: 150px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#000;
+    color:#fff;
+    border-radius: 20px;
+    font-size:12px;
+    width:120px;
+    height:30px;
+}
+
+#all-images-button p {
+    margin-left:3px;
+}
+
+/* ******************************** */
+/* main: sub-navigation */
+/* ******************************** */
+
+.flex {
+    display:flex;
+    align-items: center;
+}
+
+.sub-navigation {
+    display:flex;
+    justify-content: space-between;
+    font-family: "Trip Sans Reg";
+    color:#333;
+    font-size:12px;
+    margin-top: 5px;
+}
+
+.sub-navigation a {
+    color:#333;
+}
+
+.sub-navigation a:hover {
+    text-decoration:underline;
+}
+
+.sub-navigation .icon {
+    margin-left:4px;
+}
+
+/* ******************************** */
+/* main: description */
+/* ******************************** */
+
+.description {
+    width:60%;
+}
+
+.description p {
+    color:#333;
+    font-family: "Georgia";
+    font-size:20px;
+    line-height:24px;
+}
+
+
+/* ******************************** */
+/* main: travel advice */
+/* ******************************** */
+
+.travel-advice-container > div {
+    display:flex;
+    justify-content: space-between;
+}
+
+.travel-advice-container img {
+    width: 88px;
+    height: 80px;
+}
+
+.travel-advice > div {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    border:2px solid rgb(211, 211, 211);
+    border-radius: 15px;
+    margin-right:15px;
+    padding: 0px 20px;
+    cursor:pointer;
+}
+
+.travel-advice > div:last-child {
+    margin-right:0px;
+}
+
+.travel-advice > div:hover {
+    background-color: rgba(211, 211, 211, 0.3);
+}
+
+.travel-advice > div > p {
+    font-size:16px;
+}
+
+/* ******************************** */
+/* main: essential */
+/* ******************************** */
+
+.essential-container {
+    display:flex;
+    margin-bottom:70px;
+}
+
+.essential-container > div:first-child {
+    width:25%;
+    padding-right:10px;
+}
+
+.essential-container > div:last-child {
+    width:75%;
+}
+
+.essential-container p {
+    color:#333;
+    font-family: "Georgia";
+    font-size:18px;
+    line-height:24px;
+}
+
+.essential-container a {
+    color:#333;
+    font-size:16px;
+    text-decoration: underline;
+}
+
+.essential-container .essential {
+    display:flex;
+}
+
+.essential-reviews, .essential-reviews-number, .essential h5 {
+    margin: 2px 0px;
+}
+
+/* .essential-container .essential > div {margin-right:15px} */
+/* .essential-container .essential > div:last-child {margin-right:0px}*/
+.essential-container .essential > div:not(:last-child) {
+    margin-right:15px;
+}
+
+.essential img {
+    width: 270px;
+    height: 205px;
+    margin-bottom:8px;
+    object-fit:cover; /* crop the image to fill the box (no stretching nor change of the size) */
+    cursor:pointer;
+}
+
+.essential-icon {
+    color:#00aa6c;
+    margin-right: 6px;
+}
+
+.essential-reviews {
+    font-size:15px;
+    font-family: "Trip Sans Reg";
+}
+
+.essential-reviews-number {
+    font-size:13px;
+    font-family: "Trip Sans Reg";
+}
+
+/* ******************************** */
+/* main: dig into */
+/* ******************************** */
+
+.subtitle {
+    font-family: "Trip Sans Reg";
+}
+
+.dig-into-container {
+    display:flex;
+}
+
+.dig-into-container > div:not(:last-child) {
+    margin-right: 15px;
+}
+
+.dig-into-container a {
+    color:#000;
+}
+
+.dig-into-container a:hover {
+    text-decoration:underline;
+}
+
+.dig-into-container a:hover {
+    text-decoration: underline;
+}
+
+.dig-into-cell {
+    width: 366px;
+    height: 363px;
+    background-color:#fff;
+    text-align:center;
+}
+
+.dig-into-image {
+    height: 232px;
+    background-position: center; 
+    background-size:cover;
+}
+
+#dig-into-image-01 {
+    background-image: url('../img/morioh/dig_into_01.png')
+}
+
+#dig-into-image-02 {
+    background-image: url('../img/morioh/dig_into_02.png')
+}
+
+#dig-into-image-03 {
+    background-image: url('../img/morioh/dig_into_03.png')
+}
+
+.dig-into-link {
+    padding: 0px 15px;
+}
+
+.dig-into-link-main {
+    font-size:18px;
+}
+
+
+/* ******************************** */
+/* main: dig into */
+/* ******************************** */
+
+.great-for {
+    display:flex;
+    width:100%;
+    height:450px;
+}
+
+.great-for > div:not(:last-child) {
+    margin-right: 10px;
+}
+
+.great-for img {
+    width:100%;
+    height: 60%;
+    object-fit: cover;
+    cursor:pointer;
+}
+
+/* ******************************** */
+/* footer */
+/* ******************************** */
+
+
+footer {
+    width:100%;
+    background-color:#faf1ed;
+    position:absolute;
+}
+
+footer > section {
+    width:80%;
+}
+
+footer p {
+    color:#333;
+    font-size:12px;
+    font-family: "Trip Sans Reg";
+    margin:0px;
+    padding-bottom:6px;
+}
+
+footer a {
+    color:#333;
+    font-size:15px;
+    font-weight:bold;
+    text-decoration: underline;
+    margin-right:15px;
+}
+
+.copyright-and-link {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    margin-left:18px;
+}
+
+#notice {
+    padding: 8px 0px;
+}
+
+#more {
+    color:#333;
+    font-size:12px;
+    font-family:"Trip Sans Reg";
+    text-decoration: none;
+}
+
+#more:hover {
+    text-decoration: underline;
+}
+
+footer select {
+    border: 2px solid rgb(211, 211, 211);
+    border-radius: 15px;
+    width: 180px;
+    height: 35px;
+    font-size: 15px;
+    padding: 0px 10px;
+}
+
+#currency-and-country {
+    margin-top:-40px;
+}
