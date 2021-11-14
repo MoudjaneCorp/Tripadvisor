@@ -19,7 +19,7 @@
 	<meta name="description" content="Visit Tatooine">
 
 	<!--  title  -->
-	<title>Tatooine 2021: Visit Tatooine, Outer Border, Arkanis – Tripadvisor</title>
+	<title>Tatooine 2021: Visit Tatooine, Outer Rim, Sector Arkanis – Tripadvisor</title>
 
 	<!--   path to favicon   -->
 	<link href="https://cdn.glitch.me/c2a4fffa-bef4-4ffc-8c9c-8a9419e86df4%2Ffavicon.ico?v=1635316236649" rel="icon">
@@ -28,7 +28,20 @@
 	<link href="./assets/css/styles.css" rel="stylesheet">
 
 	<!-- path to fonts file -->
-	<link href="./assets/fonts.css" rel="stylesheet">
+	<link href="./assets/css/fonts.css" rel="stylesheet">
+
+	<!-- import bootstrap -->
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	 crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	 crossorigin="anonymous">
+	</script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+	 crossorigin="anonymous">
+	</script>
 
 
 </head>
@@ -37,6 +50,8 @@
 <body>
 	<!--    ------------------------------------------- -->
 	<!--    ------------------ header  ---------------- -->
+
+
 	<header>
 
 		<section>
@@ -109,11 +124,19 @@
           <p>Hire a Trip Designer</p>
           <svg viewBox="0 0 24 24" width="24px" height="24px"><path d="M8 9.5c1.792 0 3.25-1.458 3.25-3.25S9.792 3 8 3 4.75 4.458 4.75 6.25 6.208 9.5 8 9.5zm0-4.501A1.252 1.252 0 018 7.5a1.252 1.252 0 010-2.501zM16.004 11.499c1.792 0 3.25-1.458 3.25-3.25S17.796 5 16.004 5s-3.25 1.458-3.25 3.25 1.458 3.249 3.25 3.249zm0-4.499c.689 0 1.25.561 1.25 1.25s-.561 1.25-1.25 1.25a1.25 1.25 0 010-2.5zM21.8 15.418c-1.389-1.855-3.498-2.919-5.789-2.919-.886 0-1.741.161-2.542.462-1.358-1.565-3.315-2.461-5.459-2.461-2.336 0-4.455 1.051-5.813 2.883L2 13.648V21h20v-5.316l-.2-.266zM4 19v-4.674C4.98 13.16 6.424 12.5 8.01 12.5c1.41 0 2.705.529 3.664 1.464a7.377 7.377 0 00-1.477 1.481l-.197.268V19H4zm16 0h-8v-2.613a5.188 5.188 0 014.011-1.887c1.55 0 2.985.676 3.989 1.865V19z"></path></svg>
         </div>
-        <div class="hover carousel_button">
+        <div class="carousel_button" id="deroulant">
           <p>More</p>
           <svg x="0" y="0" viewBox="0 0 24 24" width="24px" height="24px"><circle cx="4.5" cy="11.9" r="2.5"></circle><circle cx="19.5" cy="11.9" r="2.5"></circle><circle cx="12" cy="11.9" r="2.5"></circle></svg>
-        </div>
-      </nav>
+          
+        </div>  
+        <section id="menu-deroulant">
+        <a href="#">Ajouter un lieu</a>
+        <a href="#">Croisières</a>
+        <a href="#">Forfaits</a>
+        <a href="#">Voitures</a>
+        <a href="#">Vols</a>
+
+        </section>
     </section>
 
       <!-- images -->
@@ -129,7 +152,7 @@
         <!-- div:last-child -->
         <div>
           <img class="img_hover" src="./assets/img/explore-tatooine/TatooineImg1.jpg"/>
-          <img class="img_hover" src="./assets/img/explore-tatooine/planete-tatooine-1.jpg"/>
+          <img class="img_hover" style="margin-top:3px;" src="./assets/img/explore-tatooine/planete-tatooine-1.jpg"/>
         </div>
       </section>
 
@@ -138,11 +161,11 @@
         <div class="flex">
           <p>
             <a href="#">Galaxy</a> >
-            <a href="#">Arkanis</a> >
-            <a href="#">External border</a> >
+            <a href="#">Outer Rim</a> >
+            <a href="#">Sector Arkanis</a> >
             <a href="#">Tatooine</a>
           </p>
-          <div class="icon">
+          <div class="icon" style="padding-bottom:18px">
             <svg viewBox="0 0 24 24" width="1em" height="1em"><path d="M19.324 9.175l-6.8 6.6c-.3.301-.7.301-1 0l-6.8-6.6c-.3-.3-.3-.7 0-1 .1-.101.3-.2.5-.2h13.6c.4 0 .7.3.7.7 0 .2-.1.399-.2.5z"></path></svg>
           </div>
         </div>
@@ -155,7 +178,7 @@
         <div class="description">
           <h2>Tatooine, between drought and wealth</h2>
           <p>
-            Tatooine was a sparsely inhabited circumbinary desert planet located in the galaxy's Outer Rim Territories. It was the homeworld of Anakin and Luke Skywalker, who would go on to shape galactic history. Part of a binary star system, the planet was oppressed by scorching suns, resulting in the world lacking the necessary surface water to sustain large populations. As a result, many residents of the planet instead drew water from the atmosphere via moisture farms. The planet also had little surface vegetation.
+            Tatooine is a desert planet in the galaxy. Located in the Outer Rim in the Arkanis sector, this planet orbits the binary stars Tatoo I and II. Despite the scorching heat on its surface, Tatooine is the home world of tuskens and jawas.
           </p>
         </div>
       </section>
@@ -197,7 +220,7 @@
           
           <div>
             <h4>Do</h4>
-            <p>Places to see, ways to wander, and signature experiences that define planet Tatooine.</p>
+            <p class='essential-text-align'>Places to see, ways to wander, and signature experiences that define planet Tatooine.</p>
             <a href="#">See all</a>
           </div>
 
@@ -256,7 +279,7 @@
         <nav class="essential-container">
           <div>
             <h4>Stay</h4>
-            <p>A mix of the charming, iconic, and modern.</p>
+            <p class='essential-text-align'>A mix of the charming, iconic, and modern.</p>
             <a href="#">See all</a>
           </div>
 
@@ -316,7 +339,7 @@
         <nav class="essential-container">
           <div>
             <h4>Eat</h4>
-            <p>Quintessential Tatooine bistros, bars, and beyond.</p>
+            <p class='essential-text-align'>Quintessential Tatooine bistros, bars, and beyond.</p>
             <a href="#">See all</a>
           </div>
 

@@ -166,6 +166,52 @@ header > section > nav > div, button {
 
 }
 
+.deroulant{
+  position: relative;
+  display: inline-block;
+}
+
+#deroulant:hover ~ #menu-deroulant{
+  z-index: 100000000;
+  display: flex;
+}
+
+
+
+#menu-deroulant:hover ~ #menu-deroulant{
+  display: flex;
+}
+
+#menu-deroulant{
+  display:none;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 23%;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  box-sizing: border-box; /* same size */
+  padding: 0.2px 16px;
+  margin-right: 8px;
+  margin-bottom: 10px;
+  z-index: 1000;
+  text-decoration: none;
+  background-color: white;
+}
+
+#menu-deroulant a{
+  text-decoration: none;
+  color: black;
+}
+
+#menu-deroulant a:hover{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
 /* ******************************** */
 /* main: images */
 /* ******************************** */
@@ -176,6 +222,8 @@ header > section > nav > div, button {
     display:flex;
     margin-top:12px;
     height:430px;
+    position: relative;
+    z-index: 1;
 }
 
 .images div:first-child {
@@ -203,8 +251,8 @@ header > section > nav > div, button {
 
 #all-images-button {
     position:absolute;
-    bottom: -110px;
-    left: 140px;
+    bottom:20px;
+    left:12px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -216,8 +264,14 @@ header > section > nav > div, button {
     height:30px;
 }
 
+#all-images-button:hover{
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.8);
+}
+
 #all-images-button p {
     margin-left:3px;
+    padding-top:14px ;
 }
 
 .img_hover:hover{
@@ -418,7 +472,7 @@ header > section > nav > div, button {
     background-size:cover;
 }
 
-#dig-into-image-01 {
+/* #dig-into-image-01 {
     background-image: url('../img/morioh/dig_into_01.png')
 }
 
@@ -428,7 +482,7 @@ header > section > nav > div, button {
 
 #dig-into-image-03 {
     background-image: url('../img/morioh/dig_into_03.png')
-}
+} */
 
 .dig-into-link {
     padding: 0px 15px;
@@ -524,4 +578,19 @@ footer select {
 
 #currency-and-country {
     margin-top:-40px;
+}
+
+
+
+@media screen and (max-width: 1280px){
+  .essential-container {
+    display:flex;
+    margin-bottom:70px;
+    flex-direction: column;
+}
+  .essential-text-align{
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline;
+  }
 }
